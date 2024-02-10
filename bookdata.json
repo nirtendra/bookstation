@@ -1,0 +1,289 @@
+{
+  "books": [
+    {
+      "title": "The Silent Echo",
+      "author": "Jessica Winter",
+      "year_publish": 2019,
+      "image_source": "https://th.bing.com/th/id/R.598b0c21ae7577e3911bdeaf215f6a10?rik=mYGFFMxcvtQW6w&riu=http%3a%2f%2fpngimg.com%2fuploads%2fbook%2fbook_PNG2116.png&ehk=t3rvVsFXFNhJQE%2bHTxNEsklPMuqozVePr1XVCsPPJ9w%3d&risl=&pid=ImgRaw&r=0",
+      "num_pages": 320,
+      "status": "free",
+      "id": "f2c3"
+    },
+    {
+      "title": "Whispers in the Dark",
+      "author": "Alex Morgan",
+      "year_publish": 2020,
+      "image_source": "https://th.bing.com/th/id/R.598b0c21ae7577e3911bdeaf215f6a10?rik=mYGFFMxcvtQW6w&riu=http%3a%2f%2fpngimg.com%2fuploads%2fbook%2fbook_PNG2116.png&ehk=t3rvVsFXFNhJQE%2bHTxNEsklPMuqozVePr1XVCsPPJ9w%3d&risl=&pid=ImgRaw&r=0",
+      "num_pages": 280,
+      "status": "premium",
+      "id": "1e82"
+    },
+    {
+      "title": "Lost in Translation",
+      "author": "Emily Collins",
+      "year_publish": 2018,
+      "image_source": "https://th.bing.com/th/id/R.598b0c21ae7577e3911bdeaf215f6a10?rik=mYGFFMxcvtQW6w&riu=http%3a%2f%2fpngimg.com%2fuploads%2fbook%2fbook_PNG2116.png&ehk=t3rvVsFXFNhJQE%2bHTxNEsklPMuqozVePr1XVCsPPJ9w%3d&risl=&pid=ImgRaw&r=0",
+      "num_pages": 400,
+      "status": "free",
+      "id": "6c6e"
+    },
+    {
+      "title": "Echoes of Destiny",
+      "author": "Ryan Turner",
+      "year_publish": 2021,
+      "image_source": "https://th.bing.com/th/id/R.598b0c21ae7577e3911bdeaf215f6a10?rik=mYGFFMxcvtQW6w&riu=http%3a%2f%2fpngimg.com%2fuploads%2fbook%2fbook_PNG2116.png&ehk=t3rvVsFXFNhJQE%2bHTxNEsklPMuqozVePr1XVCsPPJ9w%3d&risl=&pid=ImgRaw&r=0",
+      "num_pages": 360,
+      "status": "premium",
+      "id": "c1d5"
+    },
+    {
+      "title": "A Tale of Two Realms",
+      "author": "Sophie Johnson",
+      "year_publish": 2017,
+      "image_source": "https://th.bing.com/th/id/R.598b0c21ae7577e3911bdeaf215f6a10?rik=mYGFFMxcvtQW6w&riu=http%3a%2f%2fpngimg.com%2fuploads%2fbook%2fbook_PNG2116.png&ehk=t3rvVsFXFNhJQE%2bHTxNEsklPMuqozVePr1XVCsPPJ9w%3d&risl=&pid=ImgRaw&r=0",
+      "num_pages": 250,
+      "status": "free",
+      "id": "e70e"
+    },
+    {
+      "title": "Whirlwind of Time",
+      "author": "Oliver Parker",
+      "year_publish": 2022,
+      "image_source": "https://th.bing.com/th/id/R.598b0c21ae7577e3911bdeaf215f6a10?rik=mYGFFMxcvtQW6w&riu=http%3a%2f%2fpngimg.com%2fuploads%2fbook%2fbook_PNG2116.png&ehk=t3rvVsFXFNhJQE%2bHTxNEsklPMuqozVePr1XVCsPPJ9w%3d&risl=&pid=ImgRaw&r=0",
+      "num_pages": 310,
+      "status": "premium",
+      "id": "6946"
+    },
+    {
+      "title": "Midnight Serenade",
+      "author": "Elena Martinez",
+      "year_publish": 2016,
+      "image_source": "https://th.bing.com/th/id/R.598b0c21ae7577e3911bdeaf215f6a10?rik=mYGFFMxcvtQW6w&riu=http%3a%2f%2fpngimg.com%2fuploads%2fbook%2fbook_PNG2116.png&ehk=t3rvVsFXFNhJQE%2bHTxNEsklPMuqozVePr1XVCsPPJ9w%3d&risl=&pid=ImgRaw&r=0",
+      "num_pages": 290,
+      "status": "free",
+      "id": "aa32"
+    },
+    {
+      "title": "Shadows in the Mist",
+      "author": "Benjamin Foster",
+      "year_publish": 2023,
+      "image_source": "https://th.bing.com/th/id/R.598b0c21ae7577e3911bdeaf215f6a10?rik=mYGFFMxcvtQW6w&riu=http%3a%2f%2fpngimg.com%2fuploads%2fbook%2fbook_PNG2116.png&ehk=t3rvVsFXFNhJQE%2bHTxNEsklPMuqozVePr1XVCsPPJ9w%3d&risl=&pid=ImgRaw&r=0",
+      "num_pages": 380,
+      "status": "premium",
+      "id": "0fee"
+    },
+    {
+      "title": "Eternal Bonds",
+      "author": "Melissa Carter",
+      "year_publish": 2015,
+      "image_source": "https://th.bing.com/th/id/R.598b0c21ae7577e3911bdeaf215f6a10?rik=mYGFFMxcvtQW6w&riu=http%3a%2f%2fpngimg.com%2fuploads%2fbook%2fbook_PNG2116.png&ehk=t3rvVsFXFNhJQE%2bHTxNEsklPMuqozVePr1XVCsPPJ9w%3d&risl=&pid=ImgRaw&r=0",
+      "num_pages": 420,
+      "status": "free",
+      "id": "bbc0"
+    },
+    {
+      "title": "Beyond the Horizon",
+      "author": "Andrew Taylor",
+      "year_publish": 2024,
+      "image_source": "https://th.bing.com/th/id/R.598b0c21ae7577e3911bdeaf215f6a10?rik=mYGFFMxcvtQW6w&riu=http%3a%2f%2fpngimg.com%2fuploads%2fbook%2fbook_PNG2116.png&ehk=t3rvVsFXFNhJQE%2bHTxNEsklPMuqozVePr1XVCsPPJ9w%3d&risl=&pid=ImgRaw&r=0",
+      "num_pages": 350,
+      "status": "premium",
+      "id": "0708"
+    },
+    {
+      "title": "Crimson Secrets",
+      "author": "Natalie Davis",
+      "year_publish": 2013,
+      "image_source": "https://th.bing.com/th/id/R.598b0c21ae7577e3911bdeaf215f6a10?rik=mYGFFMxcvtQW6w&riu=http%3a%2f%2fpngimg.com%2fuploads%2fbook%2fbook_PNG2116.png&ehk=t3rvVsFXFNhJQE%2bHTxNEsklPMuqozVePr1XVCsPPJ9w%3d&risl=&pid=ImgRaw&r=0",
+      "num_pages": 270,
+      "status": "free",
+      "id": "1f3f"
+    },
+    {
+      "title": "Serenity's Embrace",
+      "author": "Mark Reynolds",
+      "year_publish": 2025,
+      "image_source": "https://th.bing.com/th/id/R.598b0c21ae7577e3911bdeaf215f6a10?rik=mYGFFMxcvtQW6w&riu=http%3a%2f%2fpngimg.com%2fuploads%2fbook%2fbook_PNG2116.png&ehk=t3rvVsFXFNhJQE%2bHTxNEsklPMuqozVePr1XVCsPPJ9w%3d&risl=&pid=ImgRaw&r=0",
+      "num_pages": 300,
+      "status": "premium",
+      "id": "22c8"
+    },
+    {
+      "title": "Infinite Possibilities",
+      "author": "Sophia White",
+      "year_publish": 2014,
+      "image_source": "https://th.bing.com/th/id/R.598b0c21ae7577e3911bdeaf215f6a10?rik=mYGFFMxcvtQW6w&riu=http%3a%2f%2fpngimg.com%2fuploads%2fbook%2fbook_PNG2116.png&ehk=t3rvVsFXFNhJQE%2bHTxNEsklPMuqozVePr1XVCsPPJ9w%3d&risl=&pid=ImgRaw&r=0",
+      "num_pages": 330,
+      "status": "free",
+      "id": "a2c2"
+    },
+    {
+      "title": "Winds of Change",
+      "author": "David Anderson",
+      "year_publish": 2026,
+      "image_source": "https://th.bing.com/th/id/R.598b0c21ae7577e3911bdeaf215f6a10?rik=mYGFFMxcvtQW6w&riu=http%3a%2f%2fpngimg.com%2fuploads%2fbook%2fbook_PNG2116.png&ehk=t3rvVsFXFNhJQE%2bHTxNEsklPMuqozVePr1XVCsPPJ9w%3d&risl=&pid=ImgRaw&r=0",
+      "num_pages": 260,
+      "status": "premium",
+      "id": "f60b"
+    },
+    {
+      "title": "Fires of Redemption",
+      "author": "Emma Turner",
+      "year_publish": 2012,
+      "image_source": "https://th.bing.com/th/id/R.598b0c21ae7577e3911bdeaf215f6a10?rik=mYGFFMxcvtQW6w&riu=http%3a%2f%2fpngimg.com%2fuploads%2fbook%2fbook_PNG2116.png&ehk=t3rvVsFXFNhJQE%2bHTxNEsklPMuqozVePr1XVCsPPJ9w%3d&risl=&pid=ImgRaw&r=0",
+      "num_pages": 240,
+      "status": "free",
+      "id": "114f"
+    },
+    {
+      "title": "The Enchanted Garden",
+      "author": "Michael Foster",
+      "year_publish": 2027,
+      "image_source": "https://th.bing.com/th/id/R.598b0c21ae7577e3911bdeaf215f6a10?rik=mYGFFMxcvtQW6w&riu=http%3a%2f%2fpngimg.com%2fuploads%2fbook%2fbook_PNG2116.png&ehk=t3rvVsFXFNhJQE%2bHTxNEsklPMuqozVePr1XVCsPPJ9w%3d&risl=&pid=ImgRaw&r=0",
+      "num_pages": 3180,
+      "status": "premium",
+      "id": "dfe7"
+    },
+    {
+      "title": "Ciphers of Destiny",
+      "author": "Lily Carter",
+      "year_publish": 2011,
+      "image_source": "https://th.bing.com/th/id/R.598b0c21ae7577e3911bdeaf215f6a10?rik=mYGFFMxcvtQW6w&riu=http%3a%2f%2fpngimg.com%2fuploads%2fbook%2fbook_PNG2116.png&ehk=t3rvVsFXFNhJQE%2bHTxNEsklPMuqozVePr1XVCsPPJ9w%3d&risl=&pid=ImgRaw&r=0",
+      "num_pages": 370,
+      "status": "free",
+      "id": "e880"
+    }
+   
+  ],
+  "gadgets": [
+    {
+      "name": "Wireless Earbuds",
+      "manufacture": "TechGear Inc.",
+      "price": 0,
+      "image": "https://example.com/wireless_earbuds.jpg",
+      "location": "Electronics Section, Freebies Store",
+      "status": "premium",
+      "id": "9343"
+    },
+    {
+      "name": "Smartwatch",
+      "manufacture": "GadgetTech",
+      "price": 0,
+      "image": "https://example.com/smartwatch.jpg",
+      "location": "Electronics Section, Freebies Store",
+      "status": "free",
+      "id": "1ae5"
+    },
+    {
+      "name": "Bluetooth Speaker",
+      "manufacture": "SoundBeats",
+      "price": 0,
+      "image": "https://example.com/bluetooth_speaker.jpg",
+      "location": "Electronics Section, Freebies Store",
+      "status": "premium",
+      "id": "cfde"
+    },
+    {
+      "name": "Portable Charger",
+      "manufacture": "PowerUp",
+      "price": 0,
+      "image": "https://example.com/portable_charger.jpg",
+      "location": "Electronics Section, Freebies Store",
+      "status": "free",
+      "id": "ed53"
+    },
+    {
+      "name": "HD Webcam",
+      "manufacture": "ClearView Tech",
+      "price": 0,
+      "image": "https://example.com/hd_webcam.jpg",
+      "location": "Electronics Section, Freebies Store",
+      "status": "premium",
+      "id": "56fa"
+    }
+  ],
+  "bookStationNearby": [
+    {
+      "stationName": "Readers Haven",
+      "location": "123 Main Street, Cityville",
+      "numberOfReaders": 150,
+      "image": "https://example.com/readers_haven.jpg",
+      "id": "b96d"
+    },
+    {
+      "stationName": "Book Oasis",
+      "location": "456 Oak Avenue, Townsville",
+      "numberOfReaders": 200,
+      "image": "https://example.com/book_oasis.jpg",
+      "id": "5dc2"
+    },
+    {
+      "stationName": "Page Turner Plaza",
+      "location": "789 Elm Boulevard, Villagetown",
+      "numberOfReaders": 180,
+      "image": "https://example.com/page_turner_plaza.jpg",
+      "id": "d79d"
+    },
+    {
+      "stationName": "Literary Junction",
+      "location": "101 Pine Road, Readingville",
+      "numberOfReaders": 120,
+      "image": "https://example.com/literary_junction.jpg",
+      "id": "8300"
+    },
+    {
+      "stationName": "Bookworm Central",
+      "location": "202 Cedar Street, Storyville",
+      "numberOfReaders": 250,
+      "image": "https://example.com/bookworm_central.jpg",
+      "id": "b7c2"
+    }
+  ],
+  "accommodations": [
+    {
+      "accommodationType": "Shared House",
+      "price": "Free",
+      "status": "free",
+      "location": "123 Oak Street, Cityville",
+      "lengthOfStay": "2 days",
+      "maxStay": "7 days",
+      "id": "9fc3"
+    },
+    {
+      "accommodationType": "Guest Room",
+      "price": "Free",
+      "status": "free",
+      "location": "456 Maple Avenue, Townsville",
+      "lengthOfStay": "3 days",
+      "maxStay": "7 days",
+      "id": "26ae"
+    },
+    {
+      "accommodationType": "Apartment",
+      "price": "Premium",
+      "status": "premium",
+      "location": "789 Pine Boulevard, Villagetown",
+      "lengthOfStay": "2 days",
+      "maxStay": "5 days",
+      "id": "a3fb"
+    },
+    {
+      "accommodationType": "Hostel Bed",
+      "price": "Free",
+      "status": "free",
+      "location": "101 Cedar Road, Readingville",
+      "lengthOfStay": "2 days",
+      "maxStay": "6 days",
+      "id": "150b"
+    },
+    {
+      "accommodationType": "Cabin",
+      "price": "Free",
+      "status": "free",
+      "location": "202 Birch Street, Storyville",
+      "lengthOfStay": "4 days",
+      "maxStay": "7 days",
+      "id": "f2f6"
+    }
+  ]
+}

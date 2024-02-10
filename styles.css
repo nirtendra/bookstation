@@ -1,0 +1,212 @@
+:root{
+
+--green: #27ae60;
+--dark-color :#219150;
+--black:#444;
+--light-color:#666;
+--border :.1rem solid var(--black);
+--box-shadow :0 .5rem 1rem rgba(0,0,0,.1)
+
+
+}
+
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .3s linear;
+    transition:none;
+}
+
+
+/* body{
+font-family: 'Abril Fatface', serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Protest Revolution', sans-serif;
+font-family: 'Rubik Mono One', monospace;
+}
+div {
+
+font-family: 'Abril Fatface', serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Protest Revolution', sans-serif;
+font-family: 'Rubik Mono One', monospace;
+} */
+
+
+
+/* Navbar header-1 */
+
+.header .header-1{
+    background:#fff ;
+    padding: 1.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+/* logo Image  */
+#logo-img{
+    width: 90px;
+    height: 34px;
+ 
+}
+.header .header-1 .search-form{
+    background-color: #8bbca0;
+    width: 50rem;
+    height: 3rem;
+    overflow: hidden;
+    border: var(--border);
+    display: flex;
+    align-items: center;
+    border-radius: 5rem;
+    justify-content: space-around;
+}
+
+.header .header-1 .search-form input{
+    font-size: 1.5rem;
+    padding: 0 1.3rem;
+    height: 100%;
+    text-transform: none;
+
+}
+#search-box{
+    width: 100%;
+}
+
+
+#addbtn{
+ width: 5rem;
+ height: 3rem;
+ background-color: #d6d137;
+ border-radius: 5rem;
+ border: var(--border);
+}
+
+#submit{
+    background-color: #27ae60;
+}
+
+
+/* FIRST MAIN CONTAINER */
+#main{
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    height: auto;
+   
+  
+
+}
+/* FIRST'S SECOND CONTAINER */
+.bookContainer {
+    max-width: 90vw;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap; 
+
+  }
+  /* FIRST'S INNER CONTAINER */
+
+.card-container {
+    border: 5px solid #120b0b;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+  
+  }
+
+ 
+
+  img{
+    width: 60px;
+  }
+
+
+  /* SECOND MAIN CONTAINER */
+
+  .second-main{
+
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    height: auto;
+    }
+  
+    /* SECOND'S SECOND CONTAINER */
+    .freeContainers{
+      max-width: 90vw;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap; 
+  
+    }
+  
+    /* SECOND INNER CONTAINER */
+  
+    .free-card-container {
+      
+        border: 1px solid #120b0b;
+        padding: 10px;
+        margin: 10px;
+        width: 200px;
+    
+    }
+
+
+
+/* THIRD MAIN CONTAINER */
+
+.third-main{
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    height: auto;
+
+}
+/* THIRD SECOND CONTAINER */
+
+.bookstation-Containers{
+
+    max-width: 0vw;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap; 
+
+  }
+  /* THIRD INNER CONTAINER */
+
+  .bookStationCard-container{
+    border: 1px solid #120b0b;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+
+  }
+
+
+
+  
+#addbooksItem{
+    width: 90vw;
+    height: auto;
+    margin: auto;
+}
+
+#addbooksItem > form> input{
+    border: 3px solid black;
+}
