@@ -2,6 +2,9 @@
 document.addEventListener("DOMContentLoaded", start)
 
 async function start() {
+  let searchform = document.querySelector("#search-form");
+  let searcbox = document.querySelector("#search-box");
+
   let addBooksForm = document.querySelector("#addBooksForm");
   let booklist = document.querySelector(".bookContainer");
   let freeContainers = document.querySelector(".freeContainers");
@@ -10,11 +13,29 @@ async function start() {
   // Fetch data from the JSON file
   let books = await getBook();
 
+
   // Populate cards with existing books
   populateBooks(books);
 
-  addBooksForm.addEventListener("submit", async (event) => {
+  searchform.addEventListener("submit", async (event) => {
     event.preventDefault();
+
+    // Get the search input value
+    const searchTerm = searcbox.value.toLowerCase()
+    
+    // Filter books based on the search term
+    const filteredBooks = books.filter((book) => {
+      return (
+        book.title.toLowerCase().includes(searchTerm) ||
+        book.author.toLowerCase().includes(searchTerm)
+      );
+    });
+
+    // Populate the books with the filtered results
+    populateBooks(filteredBooks);
+  });
+  addBooksForm.addEventListener("submit", async (event) => {
+  event.preventDefault();
 
     // Get form input values
     const title = document.getElementById("add-book-title").value;
@@ -33,11 +54,6 @@ async function start() {
     // Refresh the book list
     books = await getBook();
     populateBooks(books);
-
-
-
-
-
   });
 
 }
@@ -53,6 +69,21 @@ function populateBooks(books) {
     bookItem.classList.add("card-container"); // Add the class to the div
     bookItem.style.background="#f237"; 
 
+    let deleteButton = document.createElement("button");
+    deleteButton.textContent = "Delete";
+    deleteButton.classList.add("delete-button");
+
+    deleteButton.addEventListener("click", async () => {
+      await deleteBook(book.id); // Assuming each book object has an 'id' property
+
+      // Refresh the book list after deletion
+      books = await getBook();
+      populateBooks(books);
+    });
+
+    // Append the delete button to the bookItem
+    bookItem.appendChild(deleteButton);
+
     // Create an img element
     let imgElement = document.createElement("img");
     imgElement.src = book.image_source;
@@ -60,7 +91,6 @@ function populateBooks(books) {
     imgElement.alt = book.title;
     imgElement.classList.add("book-image"); 
     // Add the class to the img element
-
 
     // Create an h2 element
     let h2Element = document.createElement("h2");
@@ -93,12 +123,7 @@ function populateBooks(books) {
 }
 
 
-
-
-
-
-
-function getBook() {
+ async function getBook() {
   return fetch("http://localhost:3000/books").then((response) =>
     response.json()
   );
@@ -116,11 +141,16 @@ async function addBook(book) {
 }
 
 
-async function deleteBook(book) {
-  return fetch(`http://localhost:3000/books/1`, {
+async function deleteBook(bookId) {
+  return fetch(`http://localhost:3000/books/${bookId}`, {
     method: "DELETE",
   }).then((response) => response.json());
 }
+
+
+
+   
+
 
 
 

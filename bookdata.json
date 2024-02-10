@@ -1,42 +1,6 @@
 {
   "books": [
     {
-      "title": "The Silent Echo",
-      "author": "Jessica Winter",
-      "year_publish": 2019,
-      "image_source": "https://th.bing.com/th/id/R.598b0c21ae7577e3911bdeaf215f6a10?rik=mYGFFMxcvtQW6w&riu=http%3a%2f%2fpngimg.com%2fuploads%2fbook%2fbook_PNG2116.png&ehk=t3rvVsFXFNhJQE%2bHTxNEsklPMuqozVePr1XVCsPPJ9w%3d&risl=&pid=ImgRaw&r=0",
-      "num_pages": 320,
-      "status": "free",
-      "id": "f2c3"
-    },
-    {
-      "title": "Whispers in the Dark",
-      "author": "Alex Morgan",
-      "year_publish": 2020,
-      "image_source": "https://th.bing.com/th/id/R.598b0c21ae7577e3911bdeaf215f6a10?rik=mYGFFMxcvtQW6w&riu=http%3a%2f%2fpngimg.com%2fuploads%2fbook%2fbook_PNG2116.png&ehk=t3rvVsFXFNhJQE%2bHTxNEsklPMuqozVePr1XVCsPPJ9w%3d&risl=&pid=ImgRaw&r=0",
-      "num_pages": 280,
-      "status": "premium",
-      "id": "1e82"
-    },
-    {
-      "title": "Lost in Translation",
-      "author": "Emily Collins",
-      "year_publish": 2018,
-      "image_source": "https://th.bing.com/th/id/R.598b0c21ae7577e3911bdeaf215f6a10?rik=mYGFFMxcvtQW6w&riu=http%3a%2f%2fpngimg.com%2fuploads%2fbook%2fbook_PNG2116.png&ehk=t3rvVsFXFNhJQE%2bHTxNEsklPMuqozVePr1XVCsPPJ9w%3d&risl=&pid=ImgRaw&r=0",
-      "num_pages": 400,
-      "status": "free",
-      "id": "6c6e"
-    },
-    {
-      "title": "Echoes of Destiny",
-      "author": "Ryan Turner",
-      "year_publish": 2021,
-      "image_source": "https://th.bing.com/th/id/R.598b0c21ae7577e3911bdeaf215f6a10?rik=mYGFFMxcvtQW6w&riu=http%3a%2f%2fpngimg.com%2fuploads%2fbook%2fbook_PNG2116.png&ehk=t3rvVsFXFNhJQE%2bHTxNEsklPMuqozVePr1XVCsPPJ9w%3d&risl=&pid=ImgRaw&r=0",
-      "num_pages": 360,
-      "status": "premium",
-      "id": "c1d5"
-    },
-    {
       "title": "A Tale of Two Realms",
       "author": "Sophie Johnson",
       "year_publish": 2017,
@@ -53,15 +17,6 @@
       "num_pages": 310,
       "status": "premium",
       "id": "6946"
-    },
-    {
-      "title": "Midnight Serenade",
-      "author": "Elena Martinez",
-      "year_publish": 2016,
-      "image_source": "https://th.bing.com/th/id/R.598b0c21ae7577e3911bdeaf215f6a10?rik=mYGFFMxcvtQW6w&riu=http%3a%2f%2fpngimg.com%2fuploads%2fbook%2fbook_PNG2116.png&ehk=t3rvVsFXFNhJQE%2bHTxNEsklPMuqozVePr1XVCsPPJ9w%3d&risl=&pid=ImgRaw&r=0",
-      "num_pages": 290,
-      "status": "free",
-      "id": "aa32"
     },
     {
       "title": "Shadows in the Mist",
@@ -143,17 +98,7 @@
       "num_pages": 3180,
       "status": "premium",
       "id": "dfe7"
-    },
-    {
-      "title": "Ciphers of Destiny",
-      "author": "Lily Carter",
-      "year_publish": 2011,
-      "image_source": "https://th.bing.com/th/id/R.598b0c21ae7577e3911bdeaf215f6a10?rik=mYGFFMxcvtQW6w&riu=http%3a%2f%2fpngimg.com%2fuploads%2fbook%2fbook_PNG2116.png&ehk=t3rvVsFXFNhJQE%2bHTxNEsklPMuqozVePr1XVCsPPJ9w%3d&risl=&pid=ImgRaw&r=0",
-      "num_pages": 370,
-      "status": "free",
-      "id": "e880"
     }
-   
   ],
   "gadgets": [
     {
