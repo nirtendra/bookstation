@@ -37,15 +37,6 @@
       "id": "bbc0"
     },
     {
-      "title": "Beyond the Horizon",
-      "author": "Andrew Taylor",
-      "year_publish": 2024,
-      "image_source": "https://th.bing.com/th/id/R.598b0c21ae7577e3911bdeaf215f6a10?rik=mYGFFMxcvtQW6w&riu=http%3a%2f%2fpngimg.com%2fuploads%2fbook%2fbook_PNG2116.png&ehk=t3rvVsFXFNhJQE%2bHTxNEsklPMuqozVePr1XVCsPPJ9w%3d&risl=&pid=ImgRaw&r=0",
-      "num_pages": 350,
-      "status": "premium",
-      "id": "0708"
-    },
-    {
       "title": "Crimson Secrets",
       "author": "Natalie Davis",
       "year_publish": 2013,
@@ -80,24 +71,6 @@
       "num_pages": 260,
       "status": "premium",
       "id": "f60b"
-    },
-    {
-      "title": "Fires of Redemption",
-      "author": "Emma Turner",
-      "year_publish": 2012,
-      "image_source": "https://th.bing.com/th/id/R.598b0c21ae7577e3911bdeaf215f6a10?rik=mYGFFMxcvtQW6w&riu=http%3a%2f%2fpngimg.com%2fuploads%2fbook%2fbook_PNG2116.png&ehk=t3rvVsFXFNhJQE%2bHTxNEsklPMuqozVePr1XVCsPPJ9w%3d&risl=&pid=ImgRaw&r=0",
-      "num_pages": 240,
-      "status": "free",
-      "id": "114f"
-    },
-    {
-      "title": "The Enchanted Garden",
-      "author": "Michael Foster",
-      "year_publish": 2027,
-      "image_source": "https://th.bing.com/th/id/R.598b0c21ae7577e3911bdeaf215f6a10?rik=mYGFFMxcvtQW6w&riu=http%3a%2f%2fpngimg.com%2fuploads%2fbook%2fbook_PNG2116.png&ehk=t3rvVsFXFNhJQE%2bHTxNEsklPMuqozVePr1XVCsPPJ9w%3d&risl=&pid=ImgRaw&r=0",
-      "num_pages": 3180,
-      "status": "premium",
-      "id": "dfe7"
     }
   ],
   "gadgets": [
@@ -111,6 +84,33 @@
       "id": "9343"
     },
     {
+      "name": "Wireless Earbuds",
+      "manufacture": "TechGear Inc.",
+      "price": 0,
+      "image": "https://example.com/wireless_earbuds.jpg",
+      "location": "Electronics Section, Freebies Store",
+      "status": "premium",
+      "id": "934ff3"
+    },
+    {
+      "name": "Wireless Earbuds",
+      "manufacture": "TechGear Inc.",
+      "price": 0,
+      "image": "https://example.com/wireless_earbuds.jpg",
+      "location": "Electronics Section, Freebies Store",
+      "status": "premium",
+      "id": "93f43"
+    },
+    {
+      "name": "Wireless Earbuds",
+      "manufacture": "TechGear Inc.",
+      "price": 0,
+      "image": "https://example.com/wireless_earbuds.jpg",
+      "location": "Electronics Section, Freebies Store",
+      "status": "premium",
+      "id": "934s3"
+    },
+    {
       "name": "Smartwatch",
       "manufacture": "GadgetTech",
       "price": 0,
@@ -120,31 +120,13 @@
       "id": "1ae5"
     },
     {
-      "name": "Bluetooth Speaker",
-      "manufacture": "SoundBeats",
-      "price": 0,
-      "image": "https://example.com/bluetooth_speaker.jpg",
-      "location": "Electronics Section, Freebies Store",
-      "status": "premium",
-      "id": "cfde"
-    },
-    {
-      "name": "Portable Charger",
-      "manufacture": "PowerUp",
-      "price": 0,
-      "image": "https://example.com/portable_charger.jpg",
-      "location": "Electronics Section, Freebies Store",
+      "id": "1977",
+      "name": "samsung watcg",
+      "manufacture": "samsun",
+      "price": "2017",
+      "location": "25",
       "status": "free",
-      "id": "ed53"
-    },
-    {
-      "name": "HD Webcam",
-      "manufacture": "ClearView Tech",
-      "price": 0,
-      "image": "https://example.com/hd_webcam.jpg",
-      "location": "Electronics Section, Freebies Store",
-      "status": "premium",
-      "id": "56fa"
+      "category": "Gadgets"
     }
   ],
   "bookStationNearby": [
