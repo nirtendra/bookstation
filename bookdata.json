@@ -103,15 +103,6 @@
       "name": "Wireless Earbuds",
       "manufacture": "TechGear Inc.",
       "price": 0,
-      "image": "https://th.bing.com/th/id/R.598b0c21ae7577e3911bdeaf215f6a10?rik=mYGFFMxcvtQW6w&riu=http%3a%2f%2fpngimg.com%2fuploads%2fbook%2fbook_PNG2116.png&ehk=t3rvVsFXFNhJQE%2bHTxNEsklPMuqozVePr1XVCsPPJ9w%3d&risl=&pid=ImgRaw&r=0",
-      "location": "Electronics Section, Freebies Store",
-      "status": "premium",
-      "id": "93f43"
-    },
-    {
-      "name": "Wireless Earbuds",
-      "manufacture": "TechGear Inc.",
-      "price": 0,
       "image": "https://example.com/wireless_earbuds.jpg",
       "location": "Electronics Section, Freebies Store",
       "status": "premium",
@@ -125,16 +116,6 @@
       "location": "Electronics Section, Freebies Store",
       "status": "free",
       "id": "1ae5"
-    },
-    {
-      "id": "86af",
-      "name": "samsung watch",
-      "manufacture": "samsung",
-      "price": "25",
-      "image": "https://th.bing.com/th/id/R.598b0c21ae7577e3911bdeaf215f6a10?rik=mYGFFMxcvtQW6w&riu=http%3a%2f%2fpngimg.com%2fuploads%2fbook%2fbook_PNG2116.png&ehk=t3rvVsFXFNhJQE%2bHTxNEsklPMuqozVePr1XVCsPPJ9w%3d&risl=&pid=ImgRaw&r=0\"",
-      "location": "auburn",
-      "status": "free",
-      "category": "Gadgets"
     }
   ],
   "bookStationNearby": [

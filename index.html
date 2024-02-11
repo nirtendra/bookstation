@@ -1,602 +1,566 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book Station</title>
-    <link href="styles.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,400;1,500;1,600&family=Protest+Revolution&family=Rubik+Mono+One&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@400;700&family=Protest+Revolution&family=Rubik+Mono+One&display=swap"
-        rel="stylesheet">
-
-    <script src="./index.js"></script>
-
-    <style>
-
-:root {
-  --green: #27ae60;
-  --dark-color: #219150;
-  --black: #444;
-  --light-color: #666;
-  --border: 0.1rem solid var(--black);
-  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-}
-
-* {
-  font-family: "Poppins", sans-serif;
-  margin: 0;
-  box-sizing: border-box;
-  padding: 0;
-  outline: none;
-  border: none;
-}
-
-
-
-#main{
-    text-align: center;
-}
-
-body {
-  margin: 0;
-  font-family: 'Arial', sans-serif;
-}
-
-.header {
-  background-color: #3a9a43; /* Set your desired background color */
-  padding: 15px;
-  text-align: center;
-  
-}
-
-.header-1 {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
- 
-}
-
-#logo-img{
-width: 150px;
-}
-
-
-#search-form {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  margin-right: 25px;
-}
-
-
-
-#search-box {
-  min-width: 90px;
-  padding: 8px;
-  border:solid black 2px;
-  border-radius: 50px;
- 
-}
-
-#Searchbtn{
-  margin-left: 30px;
-
-}
-
-
-
-
-#Searchbtn, .delete-button {
-  background-color: #bedeb8;
-  width: 105px;
-  height: 40px;
-  border-radius: 50px;
-  border: solid black 2px;
-}
-.card-container > .delete-button {
-    position: absolute;
-    bottom: 10px;
-}
-
-/* FIRST'S SECOND CONTAINER */
-.bookContainer , .freeContainers{
- padding: 15px;
-  max-width: 95vw;
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  margin: auto;
-  text-align: center;
-}
-/* FIRST'S INNER CONTAINER */
-
-.card-container, .gadgets-container{
-position: relative;
-
-  padding: 10px;
-  margin: 10px;
-  width: 250px;
-  box-shadow: 10px 10px gray;
-  height: 350px;
-}
-
-img {
-  width: 60px;
-}
-
-#addBooksForm {
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #f5f5f5;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
-}
-
-label {
-    display: block;
-    margin-bottom: 8px;
-}
-
-input,
-select {
-    width: 100%;
-    padding: 8px;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-input[type="submit"] {
-    grid-column:  2; /* Make the submit button span both columns */
-    background-color: #4caf50;
-    color: #fff;
-   
-    font-size: 16px;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 4px;
-}
-
-input[type="submit"]:hover {
-    background-color: #45a049;
-}
-
-
-.second-main{
-  text-align: center;
-  padding: 35px;
-}
-
-
-
-
-
-
-
-
-
-
-
-/* Dark Mode Styles */
-body.dark-mode {
-    background-color: #2c3e50;
-    color: #ecf0f1;
-}
-
-.dark-mode .header {
-    background-color: #101922;
-    color: #ecf0f1;
-}
-
-
-
-
-
-
-
-    </style>
-
-</head>
-<body>
-    <!-- Header Section -->
-    <header class="header">
-        <div class="header-1">
-            <img src="./images/logo.png" alt="logo" id="logo-img">
-
-        <form id="search-form">
-            <label for="search-box"></label>
-            <input type="text" id="search-box"  placeholder="search Your Books"/>
-            <button type="submit" id="Searchbtn">Search</button>
-        </form>
-        <button id="darkModeToggle">Toggle Dark Mode</button>
-        </div>
-    </header>
-    <div id="addbooksItem">
-
-        <form id="addBooksForm">
-            <label for="add-book-title">Product Title:</label>
-            <input type="text" name="add-book-title" placeholder="Add Name" id="add-book-title">
-
-            <label for="add-books-author">Brand:</label>
-            <input type="text" name="add-books-author" placeholder="Add Manufacturer/Author" id="add-books-author">
-
-            <label for="add-books-year_publish">Published:</label>
-            <input type="text" name="add-books-year_publish" placeholder="publish year/product Location"
-                id="add-books-year_publish">
-
-            <label for="add-books-image_source">Image Source:</label>
-            <input type="text" name="add-books-image_source" placeholder="Add  image source"
-                id="add-books-image_source">
-
-            <label for="add-books-num_pages">Number of Stock :</label>
-            <input type="text" name="add-books-num_pages" placeholder="No of stock " id="add-books-num_pages">
-
-            <label for="add-books-status">Status:</label>
-            <input type="text" name="add-books-status" placeholder="status/free/premium" id="add-books-status">
-
-            <label for="add-books-category">Category:</label>
-            <select name="add-books-category" id="add-books-category">
-                <option value="Books">Books</option>
-                <option value="Gadgets">Gadgets</option>
-                <option value="Hostels">Hostels</option>
-                <!-- Add more options based on your categories -->
-            </select>
-            <input type="submit" value="Add Books">
-        </form>
-
-    </div>
-
-    <!-- Header Section  Ends-->
-    <div id="main">
-
-        <h1> Find All Trending Books</h1>
-        <div class="bookContainer">
-
-        </div>
-    </div>
-
-
-    <div class="second-main">
-        <h1> Find All Freebies</h1>
-
-      <div class="freeContainers">
-
-        </div>
-
-    </div>
-
-   
-
-
-    <script>
-        document.addEventListener("DOMContentLoaded", start)
-        
-        async function start() {
-
-            const darkModeToggle = document.getElementById("darkModeToggle");
-            const body = document.body;
-            const header = document.getElementById("header");
-            darkModeToggle.addEventListener("click", function () {
-           body.classList.toggle("dark-mode");
-           header.classList.toggle("dark-mode");
-            toggleDarkModeElements("search-box");
-           toggleDarkModeElements("searchBtn");
-
-
-        function toggleDarkModeElements(elementId) {
-        const element = document.getElementById(elementId);
-        if (element) {
-            element.classList.toggle("dark-mode");
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Station</title>
+  <link href="styles.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,400;1,500;1,600&family=Protest+Revolution&family=Rubik+Mono+One&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@400;700&family=Protest+Revolution&family=Rubik+Mono+One&display=swap"
+    rel="stylesheet">
+
+  <script src="./index.js"></script>
+
+  <style>
+    * {
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      box-sizing: border-box;
+      padding: 0;
+      outline: none;
+      border: none;
     }
 
-    });
+
+    #main {
+      text-align: center;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+    }
+
+    .header {
+      background-color: #3a9a43;
+      /* Set your desired background color */
+      padding: 15px;
+      text-align: center;
+
+    }
+
+    .header-1 {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+    }
+
+    #logo-img {
+      width: 150px;
+    }
+
+    #search-form {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      margin-right: 25px;
+    }
+
+    #search-box {
+      min-width: 90px;
+      padding: 8px;
+      border: solid black 2px;
+      border-radius: 50px;
+
+    }
+
+    #Searchbtn {
+      margin-left: 30px;
+
+    }
+
+    #Searchbtn,
+    .delete-button {
+      background-color: #bedeb8;
+      width: 105px;
+      height: 40px;
+      border-radius: 50px;
+      border: solid black 2px;
+    }
+
+    .card-container>.delete-button {
+      position: absolute;
+      bottom: 10px;
+    }
+
+    /* FIRST'S SECOND CONTAINER */
+    .bookContainer,
+    .freeContainers {
+      padding: 15px;
+      max-width: 95vw;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      margin: auto;
+      text-align: center;
+    }
+
+    /* FIRST'S INNER CONTAINER */
+
+    .card-container,
+    .gadgets-container {
+      position: relative;
+
+      padding: 10px;
+      margin: 10px;
+      width: 250px;
+      box-shadow: 10px 10px gray;
+      height: 350px;
+    }
+
+    img {
+      width: 60px;
+    }
+
+    #addBooksForm {
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #f5f5f5;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+
+
+    input,
+    select {
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+      border: 1px solid #1a0e0e;
+      border-radius: 4px;
+    }
+
+    input[type="submit"] {
+      grid-column: 2;
+      /* Make the submit button span both columns */
+      background-color: #4caf50;
+      color: #673e3e;
+
+      font-size: 16px;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+    }
+
+
+    .second-main {
+      text-align: center;
+      padding: 35px;
+    }
+
+
+
+
+    /* Dark Mode Styles */
+    body.dark-mode {
+      background-color: #3c5168;
+      color: #020505;
+    }
+
+
+    .dark-mode .header {
+      background-color: #2c4258;
+      color: #091112;
+    }
+
+
+    .dark-mode #addBooksForm {
+      background-color: #2c4258;
+      color: #091112;
+    }
+  </style>
+
+</head>
+
+<body>
+  <!-- Header Section -->
+  <header class="header">
+    <div class="header-1">
+      <img src="./images/logo.png" alt="logo" id="logo-img">
+
+      <form id="search-form">
+        <label for="search-box"></label>
+        <input type="text" id="search-box" placeholder="search Your Books" />
+        <button type="submit" id="Searchbtn">Search</button>
+      </form>
+      <button id="darkModeToggle">Toggle Dark Mode</button>
+    </div>
+  </header>
+  <div id="addbooksItem">
+
+    <form id="addBooksForm">
+      <label for="add-book-title">Product Title:</label>
+      <input type="text" name="add-book-title" placeholder="Add Name" id="add-book-title">
+
+      <label for="add-books-author">Brand:</label>
+      <input type="text" name="add-books-author" placeholder="Add Manufacturer/Author" id="add-books-author">
+
+      <label for="add-books-year_publish">Published:</label>
+      <input type="text" name="add-books-year_publish" placeholder="publish year/product Location"
+        id="add-books-year_publish">
+
+      <label for="add-books-image_source">Image Source:</label>
+      <input type="text" name="add-books-image_source" placeholder="Add  image source" id="add-books-image_source">
+
+      <label for="add-books-num_pages">Number of Stock :</label>
+      <input type="text" name="add-books-num_pages" placeholder="No of stock " id="add-books-num_pages">
+
+      <label for="add-books-status">Status:</label>
+      <input type="text" name="add-books-status" placeholder="status/free/premium" id="add-books-status">
+
+      <label for="add-books-category">Category:</label>
+      <select name="add-books-category" id="add-books-category">
+        <option value="Books">Books</option>
+        <option value="Gadgets">Gadgets</option>
+        <option value="Hostels">Hostels</option>
+        <!-- Add more options based on your categories -->
+      </select>
+      <input type="submit" value="Add Books">
+    </form>
+
+  </div>
+
+  <!-- Header Section  Ends-->
+  <div id="main">
+
+    <h1> Find All Trending Books</h1>
+    <div class="bookContainer">
+
+    </div>
+  </div>
+
+
+  <div class="second-main">
+    <h1> Find All Freebies</h1>
+
+    <div class="freeContainers">
+
+    </div>
+
+  </div>
+
+
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", start)
+
+    async function start() {
+
+
+      const darkModeToggle = document.getElementById("darkModeToggle");
+
+      darkModeToggle.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+        document.getElementById("header").classList.toggle("dark-mode");
+        document.getElementById("search-box").classList.toggle("dark-mode");
+        document.getElementById("addBooksForm").classList.toggle("dark-mode");
+
+      });
+
+
+      let searchform = document.querySelector("#search-form");
+      let searchbox = document.querySelector("#search-box");
+
+      let addBooksForm = document.querySelector("#addBooksForm");
+
+      let freeContainers = document.querySelector(".freeContainers");
+      let bookstationContainers = document.querySelector(".bookstation-Containers");
 
 
 
 
 
+      // Fetch data from the JSON file
+      let books = await getBook();
+
+      let gadgets = await getGadgets();
 
 
-          let searchform = document.querySelector("#search-form");
-          let searchbox = document.querySelector("#search-box");
-        
-          let addBooksForm = document.querySelector("#addBooksForm");
-         
-          let freeContainers = document.querySelector(".freeContainers");
-          let bookstationContainers = document.querySelector(".bookstation-Containers");
-        
-        
-        
-        
-        
-          // Fetch data from the JSON file
-          let books = await getBook();
-        
-          let gadgets = await getGadgets();
-        
-        
-          // Populate cards with existing books
+      // Populate cards with existing books
+      populateBooks(books);
+
+      populateGadgets(gadgets)
+
+      searchform.addEventListener("submit", async (event) => {
+        event.preventDefault();
+
+        // Get the search input value
+        const searchTerm = searchbox.value.toLowerCase()
+
+        // Filter books based on the search term
+        const filteredBooks = books.filter((book) => {
+          return (
+            book.title.toLowerCase().includes(searchTerm) ||
+            book.author.toLowerCase().includes(searchTerm)
+          );
+        });
+
+        const filteredgadgets = gadgets.filter((gadget) => {
+          return (
+            gadget.name.toLowerCase().includes(searchTerm) ||
+            gadget.manufacture.toLowerCase().includes(searchTerm)
+          );
+        });
+
+        // Populate the books with the filtered results
+        populateBooks(filteredBooks);
+        populateGadgets(filteredgadgets)
+      });
+      addBooksForm.addEventListener("submit", async (event) => {
+        event.preventDefault();
+
+        // Get form input values
+        const title = document.getElementById("add-book-title").value;
+        const author = document.getElementById("add-books-author").value;
+        const year_publish = document.getElementById("add-books-year_publish").value;
+        const image_source = document.getElementById("add-books-image_source").value;
+        const num_pages = document.getElementById("add-books-num_pages").value;
+        const status = document.getElementById("add-books-status").value;
+        const category = document.querySelector("#add-books-category").value;
+        console.log(category)
+
+        // Check if the selected category is "Gadgets"
+        if (category.toLowerCase() === "gadgets") {
+          const name = document.getElementById("add-book-title").value;
+          const manufacture = document.getElementById("add-books-author").value;
+          const location = document.getElementById("add-books-year_publish").value;
+          const image = document.getElementById("add-books-image_source").value;
+          const price = document.getElementById("add-books-num_pages").value;
+          const status = document.getElementById("add-books-status").value;
+          const category = document.querySelector("#add-books-category").value;
+
+
+          // Add new gadget to the JSON file
+          await addGadgets({ name, manufacture, price, image, location, status, category });
+        } else {
+          // Add new book to the JSON file
+          await addBook({ title, author, year_publish, image_source, num_pages, status, category });
+        }
+
+
+
+
+
+        // Clear the form fields
+        addBooksForm.reset();
+
+        // Refresh the book list and gadgets lists
+        books = await getBook();
+        populateBooks(books);
+        gadgets = await getGadgets()
+        populateGadgets(gadgets)
+
+
+
+
+      });
+
+    }
+
+    async function populateBooks(books) {
+      let booklist = document.querySelector(".bookContainer");
+
+      // Clear existing content
+      booklist.innerHTML = "";
+
+      books.forEach((book) => {
+        let bookItem = document.createElement("div");
+        bookItem.classList.add("card-container"); // Add the class to the div
+        bookItem.style.background = "#1125";
+
+        let deleteButton = document.createElement("button");
+        deleteButton.textContent = "Delete";
+        deleteButton.classList.add("delete-button");
+
+        deleteButton.addEventListener("click", async () => {
+          await deleteBook(book.id); // Assuming each book object has an 'id' property
+
+          // Refresh the book list after deletion
+          books = await getBook();
           populateBooks(books);
-        
-          populateGadgets(gadgets)
-        
-          searchform.addEventListener("submit", async (event) => {
-            event.preventDefault();
-        
-            // Get the search input value
-            const searchTerm = searchbox.value.toLowerCase()
-            
-            // Filter books based on the search term
-            const filteredBooks = books.filter((book) => {
-              return (
-                book.title.toLowerCase().includes(searchTerm) ||
-                book.author.toLowerCase().includes(searchTerm)
-              );
-            });
-        
-            const filteredgadgets = gadgets.filter((gadget) => {
-              return (
-                gadget.name.toLowerCase().includes(searchTerm) ||
-                gadget.manufacture.toLowerCase().includes(searchTerm)
-              );
-            });
-        
-            // Populate the books with the filtered results
-            populateBooks(filteredBooks);
-            populateGadgets(filteredgadgets)
-          });
-          addBooksForm.addEventListener("submit", async (event) => {
-          event.preventDefault();
-        
-            // Get form input values
-            const title = document.getElementById("add-book-title").value;
-            const author = document.getElementById("add-books-author").value;
-            const year_publish = document.getElementById("add-books-year_publish").value;
-            const image_source = document.getElementById("add-books-image_source").value;
-            const num_pages = document.getElementById("add-books-num_pages").value;
-            const status = document.getElementById("add-books-status").value;
-            const category = document.querySelector("#add-books-category").value;
-             console.log(category)
-        
-              // Check if the selected category is "Gadgets"
-            if (category.toLowerCase() === "gadgets") {
-              const name = document.getElementById("add-book-title").value;
-             const manufacture = document.getElementById("add-books-author").value;
-                 const  location = document.getElementById("add-books-year_publish").value;
-                const image = document.getElementById("add-books-image_source").value;
-            const price = document.getElementById("add-books-num_pages").value;
-            const status = document.getElementById("add-books-status").value;
-               const category = document.querySelector("#add-books-category").value;
-        
-        
-              // Add new gadget to the JSON file
-              await addGadgets({ name, manufacture, price,image, location, status, category });
-          } else {
-              // Add new book to the JSON file
-              await addBook({ title, author, year_publish, image_source, num_pages, status, category });
-          }
-        
-        
-        
-        
-           
-            // Clear the form fields
-            addBooksForm.reset();
-        
-            // Refresh the book list and gadgets lists
-            books = await getBook();
-            populateBooks(books);
-            gadgets =await getGadgets()
-            populateGadgets(gadgets)
-            
-        
-        
-           
-          });
-        
-        }
-        
-        async function populateBooks(books) {
-          let booklist = document.querySelector(".bookContainer");
-        
-          // Clear existing content
-          booklist.innerHTML = "";
-        
-          books.forEach((book) => {
-            let bookItem = document.createElement("div");
-            bookItem.classList.add("card-container"); // Add the class to the div
-            bookItem.style.background="#1125"; 
-        
-            let deleteButton = document.createElement("button");
-            deleteButton.textContent = "Delete";
-            deleteButton.classList.add("delete-button");
-        
-            deleteButton.addEventListener("click", async () => {
-              await deleteBook(book.id); // Assuming each book object has an 'id' property
-        
-              // Refresh the book list after deletion
-              books = await getBook();
-              populateBooks(books);
-            });
-        
-           
-           
-        
-            // Create an img element
-            let imgElement = document.createElement("img");
-            imgElement.src = book.image_source;
-            
-            imgElement.alt = book.title;
-            imgElement.classList.add("book-image"); 
-            // Add the class to the img element
-        
-            // Create an h2 element
-            let h2Element = document.createElement("h2");
-            h2Element.textContent = book.title;
-        
-            // Create p elements
-            let authorElement = document.createElement("p");
-            authorElement.textContent = `Author: ${book.author}`;
-        
-            let yearElement = document.createElement("p");
-            yearElement.textContent = `Year Published: ${book.year_publish}`;
-        
-            let pagesElement = document.createElement("p");
-            pagesElement.textContent = `Pages: ${book.num_pages}`;
-        
-            let statusElement = document.createElement("p");
-            statusElement.textContent = `Status: ${book.status}`;
-        
-            let catelement = document.createElement("p");
-            catelement.textContent = `category: ${book.category}`;
-        
-        
-            // Append child elements to the bookItem
-            bookItem.appendChild(imgElement);
-            bookItem.appendChild(h2Element);
-            bookItem.appendChild(authorElement);
-            bookItem.appendChild(yearElement);
-            bookItem.appendChild(pagesElement);
-            bookItem.appendChild(statusElement);
-            bookItem.appendChild(deleteButton);
-            bookItem.appendChild(catelement)
-        
-            // Append the bookItem to the booklist
-            booklist.appendChild(bookItem);
-          });
-        }
-        
-        
-        
-        
-        
-         async function getBook() {
-          return fetch("http://localhost:3000/books").then((response) =>
-            response.json()
-          );
-        }
-        
-        async function addBook(book) {
-          return fetch("http://localhost:3000/books", {
-            method: "POST",
-            headers: {
-              Accept: "application/json",
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify(book),
-          }).then((response) => response.json());
-        }
-        
-        
-        async function deleteBook(bookId) {
-          return fetch(`http://localhost:3000/books/${bookId}`, {
-            method: "DELETE",
-          }).then((response) => response.json());
-        }
-        
-        
-        // for adding freebies
-        
-        
-        function populateGadgets(gadgets) {
-          let gadgetlist = document.querySelector(".freeContainers");
-        
-          // Clear existing content
-          gadgetlist.innerHTML = "";
-        
-          gadgets.forEach((gadget) => {
-            let gadgetItem = document.createElement("div");
-            gadgetItem.classList.add("gadgets-container"); // Add the class to the div
-            gadgetItem.style.background="#1125"; 
-        
-            let deleteButton2 = document.createElement("button");
-            deleteButton2.textContent = "Delete";
-            deleteButton2.classList.add("delete-button");
-        
-            deleteButton2.addEventListener("click", async () => {
-              await deleteGadget(gadget.id); // Assuming each book object has an 'id' property
-        
-              // Refresh the book list after deletion
-              gadgets = await getGadgets();
-              populateGadgets(gadgets);
-            });
-        
-            // Create an img element
-            let imgElement2 = document.createElement("img");
-            imgElement2.src = gadget.image;
-          
-            imgElement2.alt = gadget.name;
-            imgElement2.classList.add("gadget-image"); 
-            // Add the class to the img element
-        
-            // Create an h2 element
-            let h2Element2 = document.createElement("h2");
-            h2Element2.textContent = gadget.name;
-        
-            // Create p elements
-            let authorElement2 = document.createElement("p");
-            authorElement2.textContent = `manufacture: ${gadget.manufacture}`;
-        
-            let yearElement2 = document.createElement("p");
-            yearElement2.textContent = `location: ${gadget.location}`;
-        
-            let pagesElement2 = document.createElement("p");
-            pagesElement2.textContent = `price: ${gadget.price}`;
-        
-            let statusElement2 = document.createElement("p");
-            statusElement2.textContent = `Status: ${gadget.status}`;
-        
-            // Append child elements to the bookItem
-            gadgetItem.appendChild(imgElement2);
-            gadgetItem.appendChild(h2Element2);
-            gadgetItem.appendChild(authorElement2);
-            gadgetItem.appendChild(yearElement2);
-            gadgetItem.appendChild(pagesElement2);
-            gadgetItem.appendChild(statusElement2);
-            gadgetItem.appendChild(deleteButton2);
-        
-            // Append the bookItem to the booklist
-            gadgetlist.appendChild(gadgetItem);
-          });
-        }
-        
-        async function getGadgets() {
-          return fetch("http://localhost:3000/gadgets").then((response) =>
-            response.json()
-          );
-        }
-        
-        async function addGadgets(gadget) {
-          return fetch("http://localhost:3000/gadgets", {
-            method: "POST",
-            headers: {
-              Accept: "application/json",
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify(gadget),
-          }).then((response) => response.json());
-        }
-        
-        async function deleteGadget(gadgetId) {
-          return fetch(`http://localhost:3000/gadgets/${gadgetId}`, {
-            method: "DELETE",
-          }).then((response) => response.json());
-        }
-        </script>
+        });
+
+
+
+
+        // Create an img element
+        let imgElement = document.createElement("img");
+        imgElement.src = book.image_source;
+
+        imgElement.alt = book.title;
+        imgElement.classList.add("book-image");
+        // Add the class to the img element
+
+        // Create an h2 element
+        let h2Element = document.createElement("h2");
+        h2Element.textContent = book.title;
+
+        // Create p elements
+        let authorElement = document.createElement("p");
+        authorElement.textContent = `Author: ${book.author}`;
+
+        let yearElement = document.createElement("p");
+        yearElement.textContent = `Year Published: ${book.year_publish}`;
+
+        let pagesElement = document.createElement("p");
+        pagesElement.textContent = `Pages: ${book.num_pages}`;
+
+        let statusElement = document.createElement("p");
+        statusElement.textContent = `Status: ${book.status}`;
+
+        let catelement = document.createElement("p");
+        catelement.textContent = `category: ${book.category}`;
+
+
+        // Append child elements to the bookItem
+        bookItem.appendChild(imgElement);
+        bookItem.appendChild(h2Element);
+        bookItem.appendChild(authorElement);
+        bookItem.appendChild(yearElement);
+        bookItem.appendChild(pagesElement);
+        bookItem.appendChild(statusElement);
+        bookItem.appendChild(deleteButton);
+        bookItem.appendChild(catelement)
+
+        // Append the bookItem to the booklist
+        booklist.appendChild(bookItem);
+      });
+    }
+
+
+
+
+
+    async function getBook() {
+      return fetch("http://localhost:3000/books").then((response) =>
+        response.json()
+      );
+    }
+
+    async function addBook(book) {
+      return fetch("http://localhost:3000/books", {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(book),
+      }).then((response) => response.json());
+    }
+
+
+    async function deleteBook(bookId) {
+      return fetch(`http://localhost:3000/books/${bookId}`, {
+        method: "DELETE",
+      }).then((response) => response.json());
+    }
+
+
+    // for adding freebies
+
+
+    function populateGadgets(gadgets) {
+      let gadgetlist = document.querySelector(".freeContainers");
+
+      // Clear existing content
+      gadgetlist.innerHTML = "";
+
+      gadgets.forEach((gadget) => {
+        let gadgetItem = document.createElement("div");
+        gadgetItem.classList.add("gadgets-container"); // Add the class to the div
+        gadgetItem.style.background = "#1125";
+
+        let deleteButton2 = document.createElement("button");
+        deleteButton2.textContent = "Delete";
+        deleteButton2.classList.add("delete-button");
+
+        deleteButton2.addEventListener("click", async () => {
+          await deleteGadget(gadget.id); // Assuming each book object has an 'id' property
+
+          // Refresh the book list after deletion
+          gadgets = await getGadgets();
+          populateGadgets(gadgets);
+        });
+
+        // Create an img element
+        let imgElement2 = document.createElement("img");
+        imgElement2.src = gadget.image;
+
+        imgElement2.alt = gadget.name;
+        imgElement2.classList.add("gadget-image");
+        // Add the class to the img element
+
+        // Create an h2 element
+        let h2Element2 = document.createElement("h2");
+        h2Element2.textContent = gadget.name;
+
+        // Create p elements
+        let authorElement2 = document.createElement("p");
+        authorElement2.textContent = `manufacture: ${gadget.manufacture}`;
+
+        let yearElement2 = document.createElement("p");
+        yearElement2.textContent = `location: ${gadget.location}`;
+
+        let pagesElement2 = document.createElement("p");
+        pagesElement2.textContent = `price: ${gadget.price}`;
+
+        let statusElement2 = document.createElement("p");
+        statusElement2.textContent = `Status: ${gadget.status}`;
+
+        // Append child elements to the bookItem
+        gadgetItem.appendChild(imgElement2);
+        gadgetItem.appendChild(h2Element2);
+        gadgetItem.appendChild(authorElement2);
+        gadgetItem.appendChild(yearElement2);
+        gadgetItem.appendChild(pagesElement2);
+        gadgetItem.appendChild(statusElement2);
+        gadgetItem.appendChild(deleteButton2);
+
+        // Append the bookItem to the booklist
+        gadgetlist.appendChild(gadgetItem);
+      });
+    }
+
+    async function getGadgets() {
+      return fetch("http://localhost:3000/gadgets").then((response) =>
+        response.json()
+      );
+    }
+
+    async function addGadgets(gadget) {
+      return fetch("http://localhost:3000/gadgets", {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(gadget),
+      }).then((response) => response.json());
+    }
+
+    async function deleteGadget(gadgetId) {
+      return fetch(`http://localhost:3000/gadgets/${gadgetId}`, {
+        method: "DELETE",
+      }).then((response) => response.json());
+    }
+  </script>
 </body>
 
 </html>
