@@ -7,6 +7,7 @@
       "image_source": "https://th.bing.com/th/id/R.598b0c21ae7577e3911bdeaf215f6a10?rik=mYGFFMxcvtQW6w&riu=http%3a%2f%2fpngimg.com%2fuploads%2fbook%2fbook_PNG2116.png&ehk=t3rvVsFXFNhJQE%2bHTxNEsklPMuqozVePr1XVCsPPJ9w%3d&risl=&pid=ImgRaw&r=0",
       "num_pages": 250,
       "status": "free",
+      "category": "book",
       "id": "e70e"
     },
     {
@@ -16,6 +17,7 @@
       "image_source": "https://th.bing.com/th/id/R.598b0c21ae7577e3911bdeaf215f6a10?rik=mYGFFMxcvtQW6w&riu=http%3a%2f%2fpngimg.com%2fuploads%2fbook%2fbook_PNG2116.png&ehk=t3rvVsFXFNhJQE%2bHTxNEsklPMuqozVePr1XVCsPPJ9w%3d&risl=&pid=ImgRaw&r=0",
       "num_pages": 310,
       "status": "premium",
+      "category": "book",
       "id": "6946"
     },
     {
@@ -25,6 +27,7 @@
       "image_source": "https://th.bing.com/th/id/R.598b0c21ae7577e3911bdeaf215f6a10?rik=mYGFFMxcvtQW6w&riu=http%3a%2f%2fpngimg.com%2fuploads%2fbook%2fbook_PNG2116.png&ehk=t3rvVsFXFNhJQE%2bHTxNEsklPMuqozVePr1XVCsPPJ9w%3d&risl=&pid=ImgRaw&r=0",
       "num_pages": 380,
       "status": "premium",
+      "category": "book",
       "id": "0fee"
     },
     {
@@ -34,6 +37,7 @@
       "image_source": "https://th.bing.com/th/id/R.598b0c21ae7577e3911bdeaf215f6a10?rik=mYGFFMxcvtQW6w&riu=http%3a%2f%2fpngimg.com%2fuploads%2fbook%2fbook_PNG2116.png&ehk=t3rvVsFXFNhJQE%2bHTxNEsklPMuqozVePr1XVCsPPJ9w%3d&risl=&pid=ImgRaw&r=0",
       "num_pages": 420,
       "status": "free",
+      "category": "book",
       "id": "bbc0"
     },
     {
@@ -42,6 +46,7 @@
       "year_publish": 2013,
       "image_source": "https://th.bing.com/th/id/R.598b0c21ae7577e3911bdeaf215f6a10?rik=mYGFFMxcvtQW6w&riu=http%3a%2f%2fpngimg.com%2fuploads%2fbook%2fbook_PNG2116.png&ehk=t3rvVsFXFNhJQE%2bHTxNEsklPMuqozVePr1XVCsPPJ9w%3d&risl=&pid=ImgRaw&r=0",
       "num_pages": 270,
+      "category": "book",
       "status": "free",
       "id": "1f3f"
     },
@@ -52,6 +57,7 @@
       "image_source": "https://th.bing.com/th/id/R.598b0c21ae7577e3911bdeaf215f6a10?rik=mYGFFMxcvtQW6w&riu=http%3a%2f%2fpngimg.com%2fuploads%2fbook%2fbook_PNG2116.png&ehk=t3rvVsFXFNhJQE%2bHTxNEsklPMuqozVePr1XVCsPPJ9w%3d&risl=&pid=ImgRaw&r=0",
       "num_pages": 300,
       "status": "premium",
+      "category": "book",
       "id": "22c8"
     },
     {
@@ -61,6 +67,7 @@
       "image_source": "https://th.bing.com/th/id/R.598b0c21ae7577e3911bdeaf215f6a10?rik=mYGFFMxcvtQW6w&riu=http%3a%2f%2fpngimg.com%2fuploads%2fbook%2fbook_PNG2116.png&ehk=t3rvVsFXFNhJQE%2bHTxNEsklPMuqozVePr1XVCsPPJ9w%3d&risl=&pid=ImgRaw&r=0",
       "num_pages": 330,
       "status": "free",
+      "category": "book",
       "id": "a2c2"
     },
     {
@@ -70,6 +77,7 @@
       "image_source": "https://th.bing.com/th/id/R.598b0c21ae7577e3911bdeaf215f6a10?rik=mYGFFMxcvtQW6w&riu=http%3a%2f%2fpngimg.com%2fuploads%2fbook%2fbook_PNG2116.png&ehk=t3rvVsFXFNhJQE%2bHTxNEsklPMuqozVePr1XVCsPPJ9w%3d&risl=&pid=ImgRaw&r=0",
       "num_pages": 260,
       "status": "premium",
+      "category": "book",
       "id": "f60b"
     }
   ],
@@ -78,7 +86,7 @@
       "name": "Wireless Earbuds",
       "manufacture": "TechGear Inc.",
       "price": 0,
-      "image": "https://example.com/wireless_earbuds.jpg",
+      "image": "https://th.bing.com/th/id/OIP.hhObI05gFqCv7vM_hmKRvgHaHa?w=197&h=197&c=7&r=0&o=5&dpr=1.4&pid=1.7",
       "location": "Electronics Section, Freebies Store",
       "status": "premium",
       "id": "9343"
@@ -87,8 +95,7 @@
       "name": "Wireless Earbuds",
       "manufacture": "TechGear Inc.",
       "price": 0,
-      "image": "https://example.com/wireless_earbuds.jpg",
-      "location": "Electronics Section, Freebies Store",
+      "image": "https://assets.kogan.com/files/external/Samsung/SSM-11901310081_4.jpg?auto=webp&bg-color=fff&canvas=753%2C502&fit=bounds&height=502&quality=75&width=753",
       "status": "premium",
       "id": "934ff3"
     },
@@ -96,7 +103,7 @@
       "name": "Wireless Earbuds",
       "manufacture": "TechGear Inc.",
       "price": 0,
-      "image": "https://example.com/wireless_earbuds.jpg",
+      "image": "https://th.bing.com/th/id/R.598b0c21ae7577e3911bdeaf215f6a10?rik=mYGFFMxcvtQW6w&riu=http%3a%2f%2fpngimg.com%2fuploads%2fbook%2fbook_PNG2116.png&ehk=t3rvVsFXFNhJQE%2bHTxNEsklPMuqozVePr1XVCsPPJ9w%3d&risl=&pid=ImgRaw&r=0",
       "location": "Electronics Section, Freebies Store",
       "status": "premium",
       "id": "93f43"
@@ -120,11 +127,12 @@
       "id": "1ae5"
     },
     {
-      "id": "1977",
-      "name": "samsung watcg",
-      "manufacture": "samsun",
-      "price": "2017",
-      "location": "25",
+      "id": "86af",
+      "name": "samsung watch",
+      "manufacture": "samsung",
+      "price": "25",
+      "image": "https://th.bing.com/th/id/R.598b0c21ae7577e3911bdeaf215f6a10?rik=mYGFFMxcvtQW6w&riu=http%3a%2f%2fpngimg.com%2fuploads%2fbook%2fbook_PNG2116.png&ehk=t3rvVsFXFNhJQE%2bHTxNEsklPMuqozVePr1XVCsPPJ9w%3d&risl=&pid=ImgRaw&r=0\"",
+      "location": "auburn",
       "status": "free",
       "category": "Gadgets"
     }
