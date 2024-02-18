@@ -1,0 +1,169 @@
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    outline: none;
+    border: none;
+  }
+
+
+  #main {
+    text-align: center;
+  }
+
+  body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+  }
+
+  .header {
+    background-color: #3a9a43;
+    /* Set your desired background color */
+    padding: 15px;
+    text-align: center;
+
+  }
+
+  .header-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+
+  #logo-img {
+    width: 150px;
+  }
+
+  #search-form {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-right: 25px;
+  }
+
+  #search-box {
+    min-width: 90px;
+    padding: 8px;
+    border: solid black 2px;
+    border-radius: 50px;
+
+  }
+
+  #Searchbtn {
+    margin-left: 30px;
+
+  }
+
+  #Searchbtn,
+  .delete-button {
+    background-color: #bedeb8;
+    width: 105px;
+    height: 40px;
+    border-radius: 50px;
+    border: solid black 2px;
+  }
+
+  .card-container>.delete-button {
+    position: absolute;
+    bottom: 10px;
+  }
+
+  /* FIRST'S SECOND CONTAINER */
+  .bookContainer,
+  .freeContainers {
+    padding: 10px;
+    max-width: 95vw;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: auto;
+    text-align: center;
+  }
+
+  /* FIRST'S INNER CONTAINER */
+
+  .card-container,
+  .gadgets-container {
+    position: relative;
+
+    padding: 10px;
+    margin: 10px;
+    width: 250px;
+    box-shadow: 10px 10px gray;
+    height: 350px;
+  }
+
+  img {
+    width: 60px;
+  }
+
+  #addBooksForm {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+
+
+  input,
+  select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #1a0e0e;
+    border-radius: 4px;
+  }
+
+  input[type="submit"] {
+    grid-column: 2;
+    /* Make the submit button span both columns */
+    background-color: #3cbb40;
+    color: #673e3e;
+
+    font-size: 16px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+  }
+
+
+  .second-main {
+    text-align: center;
+    padding: 35px;
+  }
+
+
+  #darkModeToggle{
+    width: 59px;
+    background-color: #102f19;
+    color: #f5f5f5;
+  }
+
+
+
+  /* Dark Mode Styles */
+  body.dark-mode {
+    background-color: #3c5168;
+    color: #020505;
+  }
+
+
+  .dark-mode .header {
+    background-color: #2c4258;
+    color: #091112;
+  }
+
+
+  .dark-mode #addBooksForm {
+    background-color: #2c4258;
+    color: #091112;
+  }
