@@ -1,6 +1,6 @@
 
 Book Station - Single Page Application (SPA)
-Book Station is a single-page application (SPA) designed to help users discover trending books and freebies in an interactive and seamless manner. This README provides essential information to get started with the project.
+Book Station is a single-page application (SPA) designed to help users discover trending books and freebies. This README provides essential information to get started with the project.
 
 Table of Contents
 Description
@@ -41,6 +41,7 @@ npm install
 
 Start the JSON server:
 npm run json-server
+json-server --watch bookdata.js
 
 Open another terminal and start the application:
 Visit http://localhost:3000 in your web browser.
